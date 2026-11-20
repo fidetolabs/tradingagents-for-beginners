@@ -1,0 +1,23 @@
+{"node": "recall", "t": 1795052361.106}
+{"node": "fetch", "t": 1795052361.107}
+{"node": "features", "t": 1795052361.11, "window": 80}
+{"node": "screen", "t": 1795052361.111, "window": 80}
+{"node": "backtest", "t": 1795052361.112, "window": 80}
+{"node": "judge", "t": 1795052361.113, "edge": -1798.34, "attempts": 0}
+{"node": "tune", "t": 1795052361.113, "frm": 80, "to": 100}
+{"node": "features", "t": 1795052361.114, "window": 100}
+{"node": "screen", "t": 1795052361.114, "window": 100}
+{"node": "backtest", "t": 1795052361.115, "window": 100}
+{"node": "judge", "t": 1795052361.116, "edge": -1292.99, "attempts": 1}
+{"node": "tune", "t": 1795052361.116, "frm": 100, "to": 120}
+{"node": "features", "t": 1795052361.117, "window": 120}
+{"node": "screen", "t": 1795052361.117, "window": 120}
+{"node": "backtest", "t": 1795052361.118, "window": 120}
+{"node": "judge", "t": 1795052361.119, "edge": -1292.99, "attempts": 2}
+{"node": "tune", "t": 1795052361.119, "frm": 120, "to": 140}
+{"node": "features", "t": 1795052361.12, "window": 140}
+{"node": "screen", "t": 1795052361.12, "window": 140}
+{"node": "backtest", "t": 1795052361.12, "window": 140}
+{"node": "judge", "t": 1795052361.121, "edge": -1206.68, "attempts": 3}
+{"node": "conclude", "t": 1795052361.122}
+{"node": "remember", "t": 1795052361.122, "window": 140}

@@ -1,0 +1,14 @@
+{"node": "backtest", "t": 1795052360.643, "window": 40}
+{"node": "judge", "t": 1795052360.645, "edge": -1789.29, "attempts": 1}
+{"node": "tune", "t": 1795052360.645, "frm": 40, "to": 60}
+{"node": "features", "t": 1795052360.646, "window": 60}
+{"node": "screen", "t": 1795052360.646, "window": 60}
+{"node": "backtest", "t": 1795052360.647, "window": 60}
+{"node": "judge", "t": 1795052360.648, "edge": -2049.79, "attempts": 2}
+{"node": "tune", "t": 1795052360.648, "frm": 60, "to": 80}
+{"node": "features", "t": 1795052360.649, "window": 80}
+{"node": "screen", "t": 1795052360.649, "window": 80}
+{"node": "backtest", "t": 1795052360.65, "window": 80}
+{"node": "judge", "t": 1795052360.651, "edge": -1798.34, "attempts": 3}
+{"node": "conclude", "t": 1795052360.652}
+{"node": "remember", "t": 1795052360.652, "window": 80}

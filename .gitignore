@@ -221,3 +221,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Downloaded by an episode's fetch script, never committed
+episodes/*/data/
+
+# Built by an episode's run.py, never committed
+*.sqlite
+*.sqlite-journal
+episodes/langgraph-data.json
+
+# macOS
+.DS_Store
