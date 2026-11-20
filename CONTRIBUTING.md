@@ -4,10 +4,15 @@ Fork, branch, pull request into `main`. That's the whole process.
 
 ## The data rule
 
-**No datasets in this repo.** Every episode ships a fetch script with its window
-pinned in it, so every reader downloads the same bars and gets the same numbers.
-Market data in git goes stale, bloats the clone, and says nothing about where it
-came from. A pinned fetcher says all of it in thirty lines.
+**No datasets in this repo.** An episode that reads a vendor ships a fetch script
+with its window pinned in it, so every reader downloads the same bars and gets
+the same numbers. Market data in git goes stale, bloats the clone, and says
+nothing about where it came from. A pinned fetcher says all of it in thirty
+lines.
+
+An episode that reads nothing from outside has no fetcher and skips the rest of
+this section. Say that in its README rather than adding a fetch step to match
+the shape of an episode that needs one.
 
 What a fetcher owes a reader:
 
@@ -48,9 +53,9 @@ A folder is `episodes/<NN>-<tool>/`, where `NN` is the reel's episode number and
   reader's run resolve to the versions the episode was measured on instead of
   whatever is newest. There is no `requirements.txt`: one list, no second one to
   drift.
-- A fetch script, per the data rule above.
+- A fetch script, per the data rule above, when the episode reads outside data.
 - `run.py` that runs the whole thing and prints what happened. `uv run run.py`,
-  no arguments needed, and no download: the fetch already happened.
+  no arguments needed, and no vendor call: the fetch already happened.
 - `src/`, the agent itself.
 - `tests/` that assert the shapes and the numbers the README talks about.
 - `README.md`: what the episode shows, the exact setup and run commands, the
@@ -65,6 +70,13 @@ A few more rules that aren't style:
   diff before you push.
 - **Every number in the README came out of the code.** If you can't print it, don't
   claim it.
+- **Pin whatever the numbers rest on, and check it.** Episode 13's figures rest
+  on a price series its vendor rewrites. Episode 14's rest on one embedding
+  model, so its repository, file and version are pinned too: the model name
+  alone doesn't fix which model loads. Hold the published numbers in the code,
+  refuse to write a run that misses them, and name what moved. A run that
+  prints figures the README doesn't have, and says nothing, is worse than one
+  that stops.
 
 ## Prose
 

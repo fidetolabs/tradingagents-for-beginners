@@ -1,0 +1,496 @@
+{
+ "proposed": [
+  {
+   "try": [
+    "revenue growth",
+    20,
+    "health",
+    "2024 to 2026"
+   ],
+   "asked": "try revenue growth across health over 2024 to 2026, holding the top 20",
+   "ran_before": true,
+   "verdict": "good",
+   "score": 0.4474,
+   "error": 0.0415,
+   "scoped": [
+    {
+     "memory": "ranking on revenue growth and keeping 30 was not good enough, in retail, 2024 to 2026",
+     "score": 0.7933
+    },
+    {
+     "memory": "ranking on revenue growth and keeping 30 was not good enough, in industrials, 2024 to 2026",
+     "score": 0.7892
+    },
+    {
+     "memory": "ranking on cash yield and keeping 10 was not good enough, in health, 2024 to 2026",
+     "score": 0.675
+    },
+    {
+     "memory": "ranking on cash yield and keeping 20 was not good enough, in software, 2024 to 2026",
+     "score": 0.5902
+    }
+   ],
+   "bare": [
+    {
+     "memory": "ranking on revenue growth was not good enough",
+     "score": 0.4749
+    },
+    {
+     "memory": "ranking on cash yield was not good enough",
+     "score": 0.2502
+    },
+    {
+     "memory": "ranking on sales per asset was not good enough",
+     "score": 0.2478
+    },
+    {
+     "memory": "ranking on debt to assets was not good enough",
+     "score": 0.2254
+    }
+   ]
+  },
+  {
+   "try": [
+    "debt to assets",
+    30,
+    "software",
+    "2018 to 2020"
+   ],
+   "asked": "try debt to assets across software over 2018 to 2020, holding the top 30",
+   "ran_before": true,
+   "verdict": "unclear",
+   "score": 0.3145,
+   "error": 0.0362,
+   "scoped": [
+    {
+     "memory": "ranking on debt to assets and keeping 30 was not good enough, in health, 2018 to 2020",
+     "score": 0.8433
+    },
+    {
+     "memory": "ranking on debt to assets and keeping 20 was not good enough, in industrials, 2018 to 2020",
+     "score": 0.7441
+    },
+    {
+     "memory": "ranking on debt to assets and keeping 10 was not good enough, in industrials, 2018 to 2020",
+     "score": 0.7382
+    },
+    {
+     "memory": "ranking on sales per asset and keeping 30 was not good enough, in software, 2021 to 2023",
+     "score": 0.5271
+    }
+   ],
+   "bare": [
+    {
+     "memory": "ranking on debt to assets was not good enough",
+     "score": 0.3775
+    },
+    {
+     "memory": "ranking on sales per asset was not good enough",
+     "score": 0.3026
+    },
+    {
+     "memory": "ranking on cash yield was not good enough",
+     "score": 0.2923
+    },
+    {
+     "memory": "ranking on revenue growth was not good enough",
+     "score": 0.2821
+    }
+   ]
+  },
+  {
+   "try": [
+    "debt to assets",
+    30,
+    "banks",
+    "2024 to 2026"
+   ],
+   "asked": "try debt to assets across banks over 2024 to 2026, holding the top 30",
+   "ran_before": true,
+   "verdict": "failed",
+   "score": 0.1695,
+   "error": 0.0381,
+   "scoped": [
+    {
+     "memory": "ranking on debt to assets and keeping 30 was not good enough, in banks, 2024 to 2026",
+     "score": 0.9042
+    },
+    {
+     "memory": "ranking on revenue growth and keeping 30 was not good enough, in industrials, 2024 to 2026",
+     "score": 0.4802
+    },
+    {
+     "memory": "ranking on revenue growth and keeping 30 was not good enough, in retail, 2024 to 2026",
+     "score": 0.4796
+    },
+    {
+     "memory": "ranking on debt to assets and keeping 30 was not good enough, in health, 2018 to 2020",
+     "score": 0.4651
+    }
+   ],
+   "bare": [
+    {
+     "memory": "ranking on debt to assets was not good enough",
+     "score": 0.359
+    },
+    {
+     "memory": "ranking on cash yield was not good enough",
+     "score": 0.2727
+    },
+    {
+     "memory": "ranking on sales per asset was not good enough",
+     "score": 0.2726
+    },
+    {
+     "memory": "ranking on revenue growth was not good enough",
+     "score": 0.2309
+    }
+   ]
+  },
+  {
+   "try": [
+    "revenue growth",
+    30,
+    "energy",
+    "2018 to 2020"
+   ],
+   "asked": "try revenue growth across energy over 2018 to 2020, holding the top 30",
+   "ran_before": true,
+   "verdict": "good",
+   "score": 0.3417,
+   "error": 0.0406,
+   "scoped": [
+    {
+     "memory": "ranking on revenue growth and keeping 30 was not good enough, in industrials, 2024 to 2026",
+     "score": 0.6674
+    },
+    {
+     "memory": "ranking on revenue growth and keeping 30 was not good enough, in retail, 2024 to 2026",
+     "score": 0.6568
+    },
+    {
+     "memory": "ranking on debt to assets and keeping 30 was not good enough, in health, 2018 to 2020",
+     "score": 0.5656
+    },
+    {
+     "memory": "ranking on cash yield and keeping 10 was not good enough, in industrials, 2018 to 2020",
+     "score": 0.4406
+    }
+   ],
+   "bare": [
+    {
+     "memory": "ranking on revenue growth was not good enough",
+     "score": 0.499
+    },
+    {
+     "memory": "ranking on cash yield was not good enough",
+     "score": 0.2819
+    },
+    {
+     "memory": "ranking on sales per asset was not good enough",
+     "score": 0.2734
+    },
+    {
+     "memory": "ranking on debt to assets was not good enough",
+     "score": 0.2539
+    }
+   ]
+  },
+  {
+   "try": [
+    "cash yield",
+    10,
+    "industrials",
+    "2018 to 2020"
+   ],
+   "asked": "try cash yield across industrials over 2018 to 2020, holding the top 10",
+   "ran_before": true,
+   "verdict": "failed",
+   "score": -0.0026,
+   "error": 0.0408,
+   "scoped": [
+    {
+     "memory": "ranking on cash yield and keeping 10 was not good enough, in industrials, 2018 to 2020",
+     "score": 0.9178
+    },
+    {
+     "memory": "ranking on debt to assets and keeping 10 was not good enough, in industrials, 2018 to 2020",
+     "score": 0.8388
+    },
+    {
+     "memory": "ranking on cash yield and keeping 10 was not good enough, in health, 2024 to 2026",
+     "score": 0.6792
+    },
+    {
+     "memory": "ranking on debt to assets and keeping 20 was not good enough, in industrials, 2018 to 2020",
+     "score": 0.6659
+    }
+   ],
+   "bare": [
+    {
+     "memory": "ranking on cash yield was not good enough",
+     "score": 0.4451
+    },
+    {
+     "memory": "ranking on debt to assets was not good enough",
+     "score": 0.2858
+    },
+    {
+     "memory": "ranking on revenue growth was not good enough",
+     "score": 0.2805
+    },
+    {
+     "memory": "ranking on sales per asset was not good enough",
+     "score": 0.2698
+    }
+   ]
+  },
+  {
+   "try": [
+    "cash yield",
+    10,
+    "health",
+    "2024 to 2026"
+   ],
+   "asked": "try cash yield across health over 2024 to 2026, holding the top 10",
+   "ran_before": true,
+   "verdict": "failed",
+   "score": 0.1027,
+   "error": 0.04,
+   "scoped": [
+    {
+     "memory": "ranking on cash yield and keeping 10 was not good enough, in health, 2024 to 2026",
+     "score": 0.909
+    },
+    {
+     "memory": "ranking on cash yield and keeping 20 was not good enough, in software, 2024 to 2026",
+     "score": 0.7656
+    },
+    {
+     "memory": "ranking on cash yield and keeping 10 was not good enough, in industrials, 2018 to 2020",
+     "score": 0.6894
+    },
+    {
+     "memory": "ranking on debt to assets and keeping 30 was not good enough, in banks, 2024 to 2026",
+     "score": 0.3909
+    }
+   ],
+   "bare": [
+    {
+     "memory": "ranking on cash yield was not good enough",
+     "score": 0.4269
+    },
+    {
+     "memory": "ranking on debt to assets was not good enough",
+     "score": 0.2716
+    },
+    {
+     "memory": "ranking on sales per asset was not good enough",
+     "score": 0.2612
+    },
+    {
+     "memory": "ranking on revenue growth was not good enough",
+     "score": 0.258
+    }
+   ]
+  },
+  {
+   "try": [
+    "debt to assets",
+    30,
+    "software",
+    "2015 to 2017"
+   ],
+   "asked": "try debt to assets across software over 2015 to 2017, holding the top 30",
+   "ran_before": false,
+   "verdict": "good",
+   "score": 0.5552,
+   "error": 0.0391,
+   "scoped": [
+    {
+     "memory": "ranking on sales per asset and keeping 30 was not good enough, in retail, 2015 to 2017",
+     "score": 0.8331
+    },
+    {
+     "memory": "ranking on sales per asset and keeping 30 was not good enough, in software, 2021 to 2023",
+     "score": 0.5204
+    },
+    {
+     "memory": "ranking on debt to assets and keeping 30 was not good enough, in health, 2018 to 2020",
+     "score": 0.4769
+    },
+    {
+     "memory": "ranking on debt to assets and keeping 30 was not good enough, in banks, 2024 to 2026",
+     "score": 0.4348
+    }
+   ],
+   "bare": [
+    {
+     "memory": "ranking on debt to assets was not good enough",
+     "score": 0.3874
+    },
+    {
+     "memory": "ranking on sales per asset was not good enough",
+     "score": 0.314
+    },
+    {
+     "memory": "ranking on cash yield was not good enough",
+     "score": 0.2983
+    },
+    {
+     "memory": "ranking on revenue growth was not good enough",
+     "score": 0.2918
+    }
+   ]
+  },
+  {
+   "try": [
+    "earnings growth",
+    10,
+    "industrials",
+    "2021 to 2023"
+   ],
+   "asked": "try earnings growth across industrials over 2021 to 2023, holding the top 10",
+   "ran_before": false,
+   "verdict": "good",
+   "score": 0.6052,
+   "error": 0.0346,
+   "scoped": [
+    {
+     "memory": "ranking on sales per asset and keeping 20 was not good enough, in software, 2021 to 2023",
+     "score": 0.6163
+    },
+    {
+     "memory": "ranking on sales per asset and keeping 30 was not good enough, in software, 2021 to 2023",
+     "score": 0.6068
+    },
+    {
+     "memory": "ranking on cash yield and keeping 10 was not good enough, in industrials, 2018 to 2020",
+     "score": 0.5005
+    },
+    {
+     "memory": "ranking on debt to assets and keeping 10 was not good enough, in industrials, 2018 to 2020",
+     "score": 0.4838
+    }
+   ],
+   "bare": [
+    {
+     "memory": "ranking on revenue growth was not good enough",
+     "score": 0.3256
+    },
+    {
+     "memory": "ranking on cash yield was not good enough",
+     "score": 0.2895
+    },
+    {
+     "memory": "ranking on sales per asset was not good enough",
+     "score": 0.2782
+    },
+    {
+     "memory": "ranking on debt to assets was not good enough",
+     "score": 0.2705
+    }
+   ]
+  },
+  {
+   "try": [
+    "revenue growth",
+    20,
+    "energy",
+    "2018 to 2020"
+   ],
+   "asked": "try revenue growth across energy over 2018 to 2020, holding the top 20",
+   "ran_before": false,
+   "verdict": "good",
+   "score": 0.4425,
+   "error": 0.037,
+   "scoped": [
+    {
+     "memory": "ranking on debt to assets and keeping 20 was not good enough, in industrials, 2018 to 2020",
+     "score": 0.6842
+    },
+    {
+     "memory": "ranking on revenue growth and keeping 30 was not good enough, in industrials, 2024 to 2026",
+     "score": 0.4951
+    },
+    {
+     "memory": "ranking on revenue growth and keeping 30 was not good enough, in retail, 2024 to 2026",
+     "score": 0.4837
+    },
+    {
+     "memory": "ranking on cash yield and keeping 10 was not good enough, in industrials, 2018 to 2020",
+     "score": 0.4435
+    }
+   ],
+   "bare": [
+    {
+     "memory": "ranking on revenue growth was not good enough",
+     "score": 0.503
+    },
+    {
+     "memory": "ranking on cash yield was not good enough",
+     "score": 0.2828
+    },
+    {
+     "memory": "ranking on sales per asset was not good enough",
+     "score": 0.2716
+    },
+    {
+     "memory": "ranking on debt to assets was not good enough",
+     "score": 0.2536
+    }
+   ]
+  },
+  {
+   "try": [
+    "gross margin",
+    30,
+    "banks",
+    "2015 to 2017"
+   ],
+   "asked": "try gross margin across banks over 2015 to 2017, holding the top 30",
+   "ran_before": false,
+   "verdict": "good",
+   "score": 0.4584,
+   "error": 0.0397,
+   "scoped": [
+    {
+     "memory": "ranking on sales per asset and keeping 30 was not good enough, in retail, 2015 to 2017",
+     "score": 0.8313
+    },
+    {
+     "memory": "ranking on debt to assets and keeping 30 was not good enough, in banks, 2024 to 2026",
+     "score": 0.5353
+    },
+    {
+     "memory": "ranking on debt to assets and keeping 30 was not good enough, in health, 2018 to 2020",
+     "score": 0.3632
+    },
+    {
+     "memory": "ranking on sales per asset and keeping 30 was not good enough, in software, 2021 to 2023",
+     "score": 0.3439
+    }
+   ],
+   "bare": [
+    {
+     "memory": "ranking on debt to assets was not good enough",
+     "score": 0.6504
+    },
+    {
+     "memory": "ranking on cash yield was not good enough",
+     "score": 0.6473
+    },
+    {
+     "memory": "ranking on sales per asset was not good enough",
+     "score": 0.6273
+    },
+    {
+     "memory": "ranking on revenue growth was not good enough",
+     "score": 0.6257
+    }
+   ]
+  }
+ ],
+ "llm_calls": 0,
+ "pid": 79205
+}
