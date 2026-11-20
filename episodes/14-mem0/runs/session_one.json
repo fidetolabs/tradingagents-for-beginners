@@ -1,0 +1,512 @@
+{
+ "ran": [
+  [
+   "debt to assets",
+   10,
+   "industrials",
+   "2018 to 2020"
+  ],
+  [
+   "debt to assets",
+   10,
+   "energy",
+   "2021 to 2023"
+  ],
+  [
+   "earnings growth",
+   30,
+   "industrials",
+   "2024 to 2026"
+  ],
+  [
+   "revenue growth",
+   30,
+   "industrials",
+   "2024 to 2026"
+  ],
+  [
+   "debt to assets",
+   20,
+   "software",
+   "2018 to 2020"
+  ],
+  [
+   "revenue growth",
+   30,
+   "retail",
+   "2024 to 2026"
+  ],
+  [
+   "debt to assets",
+   20,
+   "industrials",
+   "2018 to 2020"
+  ],
+  [
+   "revenue growth",
+   10,
+   "banks",
+   "2018 to 2020"
+  ],
+  [
+   "cash yield",
+   20,
+   "software",
+   "2024 to 2026"
+  ],
+  [
+   "sales per asset",
+   30,
+   "retail",
+   "2015 to 2017"
+  ],
+  [
+   "cash yield",
+   20,
+   "health",
+   "2021 to 2023"
+  ],
+  [
+   "sales per asset",
+   20,
+   "industrials",
+   "2024 to 2026"
+  ],
+  [
+   "sales per asset",
+   30,
+   "software",
+   "2021 to 2023"
+  ],
+  [
+   "debt to assets",
+   20,
+   "energy",
+   "2024 to 2026"
+  ],
+  [
+   "debt to assets",
+   30,
+   "health",
+   "2018 to 2020"
+  ],
+  [
+   "sales per asset",
+   20,
+   "software",
+   "2021 to 2023"
+  ],
+  [
+   "revenue growth",
+   10,
+   "energy",
+   "2024 to 2026"
+  ],
+  [
+   "debt to assets",
+   30,
+   "energy",
+   "2015 to 2017"
+  ],
+  [
+   "revenue growth",
+   20,
+   "health",
+   "2024 to 2026"
+  ],
+  [
+   "debt to assets",
+   30,
+   "software",
+   "2018 to 2020"
+  ],
+  [
+   "debt to assets",
+   30,
+   "banks",
+   "2024 to 2026"
+  ],
+  [
+   "revenue growth",
+   30,
+   "energy",
+   "2018 to 2020"
+  ],
+  [
+   "cash yield",
+   10,
+   "industrials",
+   "2018 to 2020"
+  ],
+  [
+   "cash yield",
+   10,
+   "health",
+   "2024 to 2026"
+  ]
+ ],
+ "tried": [
+  {
+   "try": [
+    "debt to assets",
+    10,
+    "industrials",
+    "2018 to 2020"
+   ],
+   "score": -0.0501,
+   "error": 0.036,
+   "verdict": "failed"
+  },
+  {
+   "try": [
+    "debt to assets",
+    10,
+    "energy",
+    "2021 to 2023"
+   ],
+   "score": 0.3819,
+   "error": 0.0343,
+   "verdict": "good"
+  },
+  {
+   "try": [
+    "earnings growth",
+    30,
+    "industrials",
+    "2024 to 2026"
+   ],
+   "score": 0.3926,
+   "error": 0.0344,
+   "verdict": "good"
+  },
+  {
+   "try": [
+    "revenue growth",
+    30,
+    "industrials",
+    "2024 to 2026"
+   ],
+   "score": 0.161,
+   "error": 0.0375,
+   "verdict": "failed"
+  },
+  {
+   "try": [
+    "debt to assets",
+    20,
+    "software",
+    "2018 to 2020"
+   ],
+   "score": 0.3835,
+   "error": 0.0377,
+   "verdict": "good"
+  },
+  {
+   "try": [
+    "revenue growth",
+    30,
+    "retail",
+    "2024 to 2026"
+   ],
+   "score": 0.1597,
+   "error": 0.0373,
+   "verdict": "failed"
+  },
+  {
+   "try": [
+    "debt to assets",
+    20,
+    "industrials",
+    "2018 to 2020"
+   ],
+   "score": -0.0693,
+   "error": 0.0374,
+   "verdict": "failed"
+  },
+  {
+   "try": [
+    "revenue growth",
+    10,
+    "banks",
+    "2018 to 2020"
+   ],
+   "score": 0.6258,
+   "error": 0.0394,
+   "verdict": "good"
+  },
+  {
+   "try": [
+    "cash yield",
+    20,
+    "software",
+    "2024 to 2026"
+   ],
+   "score": 0.0782,
+   "error": 0.0395,
+   "verdict": "failed"
+  },
+  {
+   "try": [
+    "sales per asset",
+    30,
+    "retail",
+    "2015 to 2017"
+   ],
+   "score": -0.0066,
+   "error": 0.037,
+   "verdict": "failed"
+  },
+  {
+   "try": [
+    "cash yield",
+    20,
+    "health",
+    "2021 to 2023"
+   ],
+   "score": 0.5499,
+   "error": 0.0398,
+   "verdict": "good"
+  },
+  {
+   "try": [
+    "sales per asset",
+    20,
+    "industrials",
+    "2024 to 2026"
+   ],
+   "score": 0.3011,
+   "error": 0.0365,
+   "verdict": "unclear"
+  },
+  {
+   "try": [
+    "sales per asset",
+    30,
+    "software",
+    "2021 to 2023"
+   ],
+   "score": -0.0689,
+   "error": 0.035,
+   "verdict": "failed"
+  },
+  {
+   "try": [
+    "debt to assets",
+    20,
+    "energy",
+    "2024 to 2026"
+   ],
+   "score": 0.4359,
+   "error": 0.0407,
+   "verdict": "good"
+  },
+  {
+   "try": [
+    "debt to assets",
+    30,
+    "health",
+    "2018 to 2020"
+   ],
+   "score": -0.0065,
+   "error": 0.0405,
+   "verdict": "failed"
+  },
+  {
+   "try": [
+    "sales per asset",
+    20,
+    "software",
+    "2021 to 2023"
+   ],
+   "score": -0.2131,
+   "error": 0.0353,
+   "verdict": "failed"
+  },
+  {
+   "try": [
+    "revenue growth",
+    10,
+    "energy",
+    "2024 to 2026"
+   ],
+   "score": 0.224,
+   "error": 0.0399,
+   "verdict": "unclear"
+  },
+  {
+   "try": [
+    "debt to assets",
+    30,
+    "energy",
+    "2015 to 2017"
+   ],
+   "score": 0.8779,
+   "error": 0.0385,
+   "verdict": "good"
+  },
+  {
+   "try": [
+    "revenue growth",
+    20,
+    "health",
+    "2024 to 2026"
+   ],
+   "score": 0.4474,
+   "error": 0.0415,
+   "verdict": "good"
+  },
+  {
+   "try": [
+    "debt to assets",
+    30,
+    "software",
+    "2018 to 2020"
+   ],
+   "score": 0.3145,
+   "error": 0.0362,
+   "verdict": "unclear"
+  },
+  {
+   "try": [
+    "debt to assets",
+    30,
+    "banks",
+    "2024 to 2026"
+   ],
+   "score": 0.1695,
+   "error": 0.0381,
+   "verdict": "failed"
+  },
+  {
+   "try": [
+    "revenue growth",
+    30,
+    "energy",
+    "2018 to 2020"
+   ],
+   "score": 0.3417,
+   "error": 0.0406,
+   "verdict": "good"
+  },
+  {
+   "try": [
+    "cash yield",
+    10,
+    "industrials",
+    "2018 to 2020"
+   ],
+   "score": -0.0026,
+   "error": 0.0408,
+   "verdict": "failed"
+  },
+  {
+   "try": [
+    "cash yield",
+    10,
+    "health",
+    "2024 to 2026"
+   ],
+   "score": 0.1027,
+   "error": 0.04,
+   "verdict": "failed"
+  }
+ ],
+ "failed": [
+  [
+   "debt to assets",
+   10,
+   "industrials",
+   "2018 to 2020"
+  ],
+  [
+   "revenue growth",
+   30,
+   "industrials",
+   "2024 to 2026"
+  ],
+  [
+   "revenue growth",
+   30,
+   "retail",
+   "2024 to 2026"
+  ],
+  [
+   "debt to assets",
+   20,
+   "industrials",
+   "2018 to 2020"
+  ],
+  [
+   "cash yield",
+   20,
+   "software",
+   "2024 to 2026"
+  ],
+  [
+   "sales per asset",
+   30,
+   "retail",
+   "2015 to 2017"
+  ],
+  [
+   "sales per asset",
+   30,
+   "software",
+   "2021 to 2023"
+  ],
+  [
+   "debt to assets",
+   30,
+   "health",
+   "2018 to 2020"
+  ],
+  [
+   "sales per asset",
+   20,
+   "software",
+   "2021 to 2023"
+  ],
+  [
+   "debt to assets",
+   30,
+   "banks",
+   "2024 to 2026"
+  ],
+  [
+   "cash yield",
+   10,
+   "industrials",
+   "2018 to 2020"
+  ],
+  [
+   "cash yield",
+   10,
+   "health",
+   "2024 to 2026"
+  ]
+ ],
+ "bar": 0.25,
+ "paths": 240,
+ "scoped_rows": [
+  "ranking on debt to assets and keeping 10 was not good enough, in industrials, 2018 to 2020",
+  "ranking on revenue growth and keeping 30 was not good enough, in industrials, 2024 to 2026",
+  "ranking on revenue growth and keeping 30 was not good enough, in retail, 2024 to 2026",
+  "ranking on debt to assets and keeping 20 was not good enough, in industrials, 2018 to 2020",
+  "ranking on cash yield and keeping 20 was not good enough, in software, 2024 to 2026",
+  "ranking on sales per asset and keeping 30 was not good enough, in retail, 2015 to 2017",
+  "ranking on sales per asset and keeping 30 was not good enough, in software, 2021 to 2023",
+  "ranking on debt to assets and keeping 30 was not good enough, in health, 2018 to 2020",
+  "ranking on sales per asset and keeping 20 was not good enough, in software, 2021 to 2023",
+  "ranking on debt to assets and keeping 30 was not good enough, in banks, 2024 to 2026",
+  "ranking on cash yield and keeping 10 was not good enough, in industrials, 2018 to 2020",
+  "ranking on cash yield and keeping 10 was not good enough, in health, 2024 to 2026"
+ ],
+ "bare_rows": [
+  "ranking on cash yield was not good enough",
+  "ranking on debt to assets was not good enough",
+  "ranking on revenue growth was not good enough",
+  "ranking on sales per asset was not good enough"
+ ],
+ "llm_calls": 0,
+ "pid": 79204
+}

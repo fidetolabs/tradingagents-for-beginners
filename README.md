@@ -12,28 +12,35 @@ The reels are a numbered series, *How To Build A Self-Improving AI Trading Agent
 ## Layout
 
 One folder an episode, under `episodes/<NN>-<tool>/`. Each folder stands alone and
-carries its own `pyproject.toml`, `uv.lock`, fetcher, tests and README. There is
-no shared package and nothing to install at the root.
+carries its own `pyproject.toml`, `uv.lock`, tests and README. There is no shared
+package and nothing to install at the root.
 
 ## Episodes
 
 | # | tool | what it measures | folder |
 | --- | --- | --- | --- |
 | 13 | LangGraph | what a checkpoint is worth when the process dies, and how much of a fork's gain was the market moving | [`episodes/13-langgraph/`](episodes/13-langgraph/) |
+| 14 | Mem0 | what a memory of failed experiments saves, and what it blocks once the short version drops the scope | [`episodes/14-mem0/`](episodes/14-mem0/) |
 
 Earlier reels were built before this repo existed, so they aren't here. New rows
 land as new reels ship.
 
-## Fetch, then run
-
-**No market data is committed here.** An episode ships a fetch script with its
-date window pinned inside it, so you download the same bars the reel was run on
-and get the same numbers. The fetch needs a network. Nothing after it does.
+## Running one
 
 Every episode runs with [uv](https://docs.astral.sh/uv/), and that is the only
 thing you install. Each folder carries a `pyproject.toml` and a committed
 `uv.lock`, so `uv` builds the environment itself, down to fetching a Python if
 yours is too old.
+
+```sh
+cd episodes/14-mem0
+uv run run.py
+uv run pytest tests -q
+```
+
+**No datasets are committed here.** An episode that reads a vendor ships a fetch
+script with its date window pinned inside it, so you download the same bars the
+reel was run on and get the same numbers. That is episode 13's first step:
 
 ```sh
 cd episodes/13-langgraph
@@ -42,8 +49,13 @@ uv run pytest tests -q
 uv run run.py
 ```
 
-The pattern is the same in every episode. Read that episode's README for what the
-output should say.
+An episode that reads nothing from outside has no fetcher. Read that episode's
+README for the order its commands go in and what the output should say.
+
+Whatever an episode's numbers rest on is pinned in its code, and the run refuses
+to print a figure that doesn't match what the reel published. For episode 13 that
+is a price series a vendor rewrites; for episode 14 it is the embedding model
+every score comes out of.
 
 ## What this is not
 

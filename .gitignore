@@ -232,3 +232,7 @@ episodes/langgraph-data.json
 
 # macOS
 .DS_Store
+
+# Built by an episode's run.py, never committed
+episodes/*/store/
+episodes/mem0-data.json
