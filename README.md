@@ -12,8 +12,8 @@ The reels are a numbered series, *How To Build A Self-Improving AI Trading Agent
 ## Layout
 
 One folder an episode, under `episodes/<NN>-<tool>/`. Each folder stands alone and
-carries its own requirements, fetcher, tests and README. There is no shared
-package and nothing to install at the root.
+carries its own `pyproject.toml`, `uv.lock`, fetcher, tests and README. There is
+no shared package and nothing to install at the root.
 
 ## Episodes
 
@@ -30,13 +30,16 @@ land as new reels ship.
 date window pinned inside it, so you download the same bars the reel was run on
 and get the same numbers. The fetch needs a network. Nothing after it does.
 
+Every episode runs with [uv](https://docs.astral.sh/uv/), and that is the only
+thing you install. Each folder carries a `pyproject.toml` and a committed
+`uv.lock`, so `uv` builds the environment itself, down to fetching a Python if
+yours is too old.
+
 ```sh
 cd episodes/13-langgraph
-python3.13 -m venv .venv
-.venv/bin/pip install -r requirements.txt
-.venv/bin/python fetch_data.py
-.venv/bin/python -m pytest tests -q
-.venv/bin/python run.py
+uv run fetch_data.py
+uv run pytest tests -q
+uv run run.py
 ```
 
 The pattern is the same in every episode. Read that episode's README for what the

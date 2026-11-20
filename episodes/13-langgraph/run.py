@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 """Run the experiment and write ../langgraph-data.json.
 
-    .venv/bin/python run.py                # the whole thing
+    uv run run.py
 
-Run `fetch_data.py` first: that is where the SPY window is pinned, and this
-script never downloads anything.
+Run `uv run fetch_data.py` first: that is where the SPY window is pinned, and
+this script never downloads anything.
 
 FIVE PHASES, EACH IN ITS OWN PROCESS, because the claim being measured is about
 processes dying. The parent orchestrates; every child opens its own checkpointer

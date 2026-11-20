@@ -21,19 +21,24 @@ a measurement.
 
 ## Run it
 
-You need Python 3.13. No API key. The fetch needs a network; nothing after it
-does.
+You need [uv](https://docs.astral.sh/uv/). You don't need a Python: `uv` reads
+`requires-python` from `pyproject.toml` and fetches one if yours is older than
+3.13. No API key, and no virtual environment to make. The fetch needs a network;
+nothing after it does.
 
 ```sh
 cd episodes/13-langgraph
-python3.13 -m venv .venv
-.venv/bin/pip install -r requirements.txt
-.venv/bin/python fetch_data.py         # downloads SPY into data/, needs a network
-.venv/bin/python -m pytest tests -q    # 15 tests
-.venv/bin/python run.py                # the five phases
+uv run fetch_data.py       # downloads SPY into data/, needs a network
+uv run pytest tests -q     # 15 tests
+uv run run.py              # the five phases
 ```
 
-`data/` is in the repo's `.gitignore`, so your download never gets committed.
+The first command builds the environment from `uv.lock` and takes a minute. The
+other two reuse it. On Python 3.14 the tests pass with 17 deprecation warnings
+from a dependency; on 3.13 there are none.
+
+`data/` and the `.venv/` uv makes are both in the repo's `.gitignore`, so neither
+your download nor your environment gets committed.
 
 ## What you should see
 
@@ -217,6 +222,8 @@ drops incomplete rows and counts them, never fills them.
 
 | path | what it is |
 | --- | --- |
+| `pyproject.toml` | the dependencies, and `requires-python = ">=3.13"` |
+| `uv.lock` | the exact versions the numbers above came out of. Committed on purpose: it is the dependency half of what `fetch_data.py` does for the data |
 | `fetch_data.py` | the pinned window, the download, the adjustment, and the pin it checks before writing |
 | `run.py` | the five phases, and the parent that orchestrates them |
 | `src/graph.py` | the `StateGraph`: nine nodes, the conditional edge, the loop |

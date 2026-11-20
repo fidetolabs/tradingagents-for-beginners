@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """Download the exact SPY bars this episode was run on.
 
-    .venv/bin/python fetch_data.py
+    uv run fetch_data.py
 
 THE WINDOW IS PINNED HERE AND NOWHERE ELSE. One download, two writes: the series
 the fork reads, cut at FORK_CUT, and the series thread A reads, the same download

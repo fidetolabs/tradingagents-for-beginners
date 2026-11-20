@@ -21,6 +21,9 @@ What a fetcher owes a reader:
   and a few closes the episode was measured on. Refuse to write files that miss
   it, and test the written files against it. A silent drift prints different
   numbers from the README, which is worse than a failure.
+- **It runs as `uv run fetch_data.py`**, with no arguments and no setup step
+  before it. The episode's `pyproject.toml` carries whatever it needs to reach
+  the vendor.
 - **The download goes in `.gitignore`**, so a reader's fetch can't be committed.
 
 ## Fixing an episode
@@ -40,10 +43,14 @@ Episode folders follow the reels on
 A folder is `episodes/<NN>-<tool>/`, where `NN` is the reel's episode number and
 `<tool>` is the open-source tool it uses. A good one holds:
 
-- `requirements.txt`, with pinned versions, and a note saying what it was run with.
+- `pyproject.toml` with the dependencies pinned to exact versions and
+  `requires-python`, and `uv.lock` committed beside it. The lock is what makes a
+  reader's run resolve to the versions the episode was measured on instead of
+  whatever is newest. There is no `requirements.txt`: one list, no second one to
+  drift.
 - A fetch script, per the data rule above.
-- `run.py` that runs the whole thing and prints what happened. One command, no
-  arguments needed, and no download: the fetch already happened.
+- `run.py` that runs the whole thing and prints what happened. `uv run run.py`,
+  no arguments needed, and no download: the fetch already happened.
 - `src/`, the agent itself.
 - `tests/` that assert the shapes and the numbers the README talks about.
 - `README.md`: what the episode shows, the exact setup and run commands, the
