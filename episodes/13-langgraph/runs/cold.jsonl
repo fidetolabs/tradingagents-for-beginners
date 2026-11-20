@@ -1,0 +1,10 @@
+{"node": "recall", "t": 1795052360.238}
+{"node": "fetch", "t": 1795052360.238}
+{"node": "features", "t": 1795052360.242, "window": 20}
+{"node": "screen", "t": 1795052360.242, "window": 20}
+{"node": "backtest", "t": 1795052360.243, "window": 20}
+{"node": "judge", "t": 1795052360.244, "edge": -1326.42, "attempts": 0}
+{"node": "tune", "t": 1795052360.245, "frm": 20, "to": 40}
+{"node": "features", "t": 1795052360.245, "window": 40}
+{"node": "screen", "t": 1795052360.245, "window": 40}
+{"node": "__killed__", "t": 1795052360.246, "at": "backtest"}

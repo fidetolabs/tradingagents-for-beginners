@@ -1,0 +1,22 @@
+{"node": "fetch", "t": 1795052362.066}
+{"node": "features", "t": 1795052362.07, "window": 20}
+{"node": "screen", "t": 1795052362.07, "window": 20}
+{"node": "backtest", "t": 1795052362.071, "window": 20}
+{"node": "judge", "t": 1795052362.072, "edge": -1191.96, "attempts": 0}
+{"node": "tune", "t": 1795052362.073, "frm": 20, "to": 40}
+{"node": "features", "t": 1795052362.073, "window": 40}
+{"node": "screen", "t": 1795052362.073, "window": 40}
+{"node": "backtest", "t": 1795052362.074, "window": 40}
+{"node": "judge", "t": 1795052362.075, "edge": -1654.83, "attempts": 1}
+{"node": "tune", "t": 1795052362.076, "frm": 40, "to": 60}
+{"node": "features", "t": 1795052362.076, "window": 60}
+{"node": "screen", "t": 1795052362.076, "window": 60}
+{"node": "backtest", "t": 1795052362.077, "window": 60}
+{"node": "judge", "t": 1795052362.078, "edge": -1941.05, "attempts": 2}
+{"node": "tune", "t": 1795052362.078, "frm": 60, "to": 80}
+{"node": "features", "t": 1795052362.078, "window": 80}
+{"node": "screen", "t": 1795052362.079, "window": 80}
+{"node": "backtest", "t": 1795052362.079, "window": 80}
+{"node": "judge", "t": 1795052362.08, "edge": -1663.88, "attempts": 3}
+{"node": "conclude", "t": 1795052362.081}
+{"node": "remember", "t": 1795052362.081, "window": 80}

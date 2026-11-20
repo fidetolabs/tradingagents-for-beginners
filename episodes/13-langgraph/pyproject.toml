@@ -1,0 +1,26 @@
+# The dependencies this episode was measured on, and the Python it needs.
+# `uv run` builds the environment from here and from uv.lock, so there is no
+# install step and no venv to make by hand. uv.lock is committed on purpose:
+# it pins the exact versions the reel's numbers came out of, for the same
+# reason fetch_data.py pins the data window.
+[project]
+name = "episode-13-langgraph"
+version = "0"
+description = "LangGraph checkpoints and replay, the code behind @fidetolabs reel #13"
+requires-python = ">=3.13"
+dependencies = [
+    "langgraph==1.2.22",
+    "langgraph-checkpoint==4.3.2",
+    "langgraph-checkpoint-sqlite==3.1.3",
+    "pandas==3.1.1",
+    "numpy==2.5.5",
+    "pytest==9.2.0",
+    "yfinance==1.8.0",
+]
+
+# NOT A PACKAGE. `run.py` and `fetch_data.py` put the episode folder on the path
+# and import `src` from there, and the tests pick it up the same way. Building
+# and installing a distribution called `src` would put a second copy on the
+# path ahead of the one you are reading.
+[tool.uv]
+package = false
