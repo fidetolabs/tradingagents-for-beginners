@@ -1,0 +1,21 @@
+# The dependencies this episode was measured on, and the Python it needs.
+# `uv run` builds the environment from here and from uv.lock, so there is no
+# install step and no venv to make by hand. uv.lock is committed on purpose:
+# every figure in this episode is a db-hit count out of one Neo4j planner
+# reached through one driver, so the versions ARE the measurement. See
+# src/pin.py.
+[project]
+name = "episode-15-neo4j"
+version = "0"
+description = "Neo4j financial knowledge graph, the code behind @fidetolabs reel #15"
+requires-python = ">=3.13"
+dependencies = [
+    "neo4j==6.4.1",
+    "pytest==9.2.0",
+]
+
+# NOT A PACKAGE. `run.py` and the tests put the episode folder on the path and
+# import `src` from there. Building and installing a distribution called `src`
+# would put a second copy on the path ahead of the one you are reading.
+[tool.uv]
+package = false
