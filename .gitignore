@@ -236,3 +236,4 @@ episodes/langgraph-data.json
 # Built by an episode's run.py, never committed
 episodes/*/store/
 episodes/mem0-data.json
+episodes/neo4j-data.json
