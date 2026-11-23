@@ -237,3 +237,4 @@ episodes/langgraph-data.json
 episodes/*/store/
 episodes/mem0-data.json
 episodes/neo4j-data.json
+episodes/qdrant-data.json

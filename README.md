@@ -22,6 +22,7 @@ package and nothing to install at the root.
 | 13 | LangGraph | what a checkpoint is worth when the process dies, and how much of a fork's gain was the market moving | [`episodes/13-langgraph/`](episodes/13-langgraph/) |
 | 14 | Mem0 | what a memory of failed experiments saves, and what it blocks once the short version drops the scope | [`episodes/14-mem0/`](episodes/14-mem0/) |
 | 15 | Neo4j | what ruling two wordings into one node saves on every later question, and what it costs when the node is a whole theme | [`episodes/15-neo4j/`](episodes/15-neo4j/) |
+| 16 | Qdrant | what filtering inside the search buys over filtering after it, and what the index stops doing once a filter field was never declared | [`episodes/16-qdrant/`](episodes/16-qdrant/) |
 
 Earlier reels were built before this repo existed, so they aren't here. New rows
 land as new reels ship.
@@ -53,14 +54,18 @@ uv run run.py
 An episode that reads nothing from outside has no fetcher. Read that episode's
 README for the order its commands go in and what the output should say.
 
-**Episode 15 needs a server**, which is the one setup step that isn't `uv`. Neo4j
-runs as a database you connect to, so its folder starts with how to get one —
-Docker, Desktop, the tarball or Aura — before anything else runs.
+**Episodes 15 and 16 need a server**, which is the one setup step that isn't
+`uv`. Neo4j and Qdrant both run as a database you connect to, so each folder
+starts with how to get one — Docker, a release binary, or the vendor's cloud —
+before anything else runs. Episode 16 reads SEC EDGAR, which asks for a real
+contact, so it also wants `EDGAR_CONTACT` set to your own name and email; it
+downloads nothing without it.
 
 Whatever an episode's numbers rest on is pinned in its code, and the run refuses
 to print a figure that doesn't match what the reel published. For episode 13 that
 is a price series a vendor rewrites; for episode 14 it is the embedding model
-every score comes out of.
+every score comes out of. Episode 16's index is built without a seed, so it
+publishes a range over eight builds instead of one reading.
 
 ## What this is not
 
