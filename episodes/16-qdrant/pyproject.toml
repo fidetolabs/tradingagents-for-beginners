@@ -1,0 +1,23 @@
+# The dependencies this episode was measured on, and the Python it needs.
+# `uv run` builds the environment from here and from uv.lock, so there is no
+# install step and no venv to make by hand. uv.lock is committed on purpose:
+# every figure in this episode comes out of one Qdrant server reached through
+# one client, over vectors from one ONNX file, so the versions ARE the
+# measurement. See src/pin.py.
+[project]
+name = "episode-16-qdrant"
+version = "0"
+description = "Qdrant retrieval over SEC filings, the code behind @fidetolabs reel #16"
+requires-python = ">=3.13"
+dependencies = [
+    "qdrant-client==1.20.0",
+    "fastembed==0.9.1",
+    "numpy==2.3.4",
+    "pytest==9.2.0",
+]
+
+# NOT A PACKAGE. `run.py` and the tests put the episode folder on the path and
+# import `src` from there. Building and installing a distribution called `src`
+# would put a second copy on the path ahead of the one you are reading.
+[tool.uv]
+package = false
